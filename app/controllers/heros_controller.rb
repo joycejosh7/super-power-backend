@@ -9,4 +9,14 @@ class HerosController < ApplicationController
        render json: hero
     end
 
+    def create
+        # binding.pry
+        hero = Hero.create(hero_params)
+        render json: hero
+    end
+
+    def hero_params
+        params.require(:hero).permit(:name)
+    end
+
 end
