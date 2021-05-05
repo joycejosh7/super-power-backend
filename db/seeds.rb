@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Hero.create(name: "Invincible")
+Hero.create(name: "Omni-Man")
+Hero.create(name: "Atom Eve")
+
+Power.create(ability: "Flight", hero_id: 1)
+Power.create(ability: "Strength", hero_id: 1)
+
+Power.create(ability: "Flight", hero_id: 2)
+Power.create(ability: "Strength", hero_id: 2)
+
+Power.create(ability: "Flight", hero_id: 3)
