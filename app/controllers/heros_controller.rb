@@ -1,7 +1,7 @@
 class HerosController < ApplicationController
 
     def index
-        render json: Hero.all
+        render json: Hero.all, key_transform: :camel_lower
     end
 
     def show
